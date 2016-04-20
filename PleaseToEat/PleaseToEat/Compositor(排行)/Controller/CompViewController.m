@@ -7,7 +7,7 @@
 //
 
 #import "CompViewController.h"
-
+#import "ScreenViewController.h"
 @interface CompViewController ()
 
 @end
@@ -17,21 +17,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
-   
+   self.navigationItem.title = @"返回";
     UISegmentedControl *seg = [[UISegmentedControl alloc]initWithItems:@[@"热门",@"附近" ]];
     seg.tintColor = [UIColor whiteColor];
+    seg.frame = CGRectMake(0, 0, 180, seg.frame.size.height);
     seg.selectedSegmentIndex = 0;
+    seg.layer.cornerRadius = seg.frame.size.height/2;
+    seg.layer.borderWidth = 1.0;
+    seg.layer.masksToBounds = YES;
     self.navigationItem.titleView= seg;
-    
-    
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(addObject)];
+//    
+//    UIImage *imagess = [[UIImage imageNamed:@"NaviUnFiltered"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"NaviUnFiltered"] style:UIBarButtonItemStylePlain target:self action:@selector(rightBtnAction:)];
+//    // 富文本方式 改变颜色
+//    NSMutableDictionary *selectedTextAttrs = [NSMutableDictionary dictionary];
+//    selectedTextAttrs[NSBackgroundColorAttributeName] = [UIColor whiteColor];
+//    [self.navigationItem.rightBarButtonItem setTitleTextAttributes:selectedTextAttrs forState:UIControlStateNormal];
+//    [self.navigationItem.rightBarButtonItem setTintColor:[UIColor blackColor]];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     [self.navigationItem setRightBarButtonItem:rightButton];
     
     
-    
+}
+
+-(void)rightBtnAction:(UIBarButtonItem *)sender{
+    ScreenViewController *screen = [[ScreenViewController alloc]init];
+    [self.navigationController pushViewController:screen animated:YES];
     
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -41,14 +56,21 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
+
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+
     return 0;
 }
+
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

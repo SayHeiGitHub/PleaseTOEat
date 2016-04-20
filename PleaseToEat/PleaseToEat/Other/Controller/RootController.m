@@ -12,6 +12,7 @@
 #import "MessageViewController.h"
 #import "MineViewController.h"
 #import "TabBar.h"
+#import "NavigationViewController.h"
 @interface RootController ()<UITabBarControllerDelegate,TabBarDelegate>
 
 @end
@@ -63,11 +64,17 @@
     selectedTextAttrs[NSForegroundColorAttributeName] = [UIColor grayColor];
     [childVC.tabBarItem setTitleTextAttributes:selectedTextAttrs forState:UIControlStateSelected];
 //    //添加为tabBar控制器的子控制器
-    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:childVC];
+    NavigationViewController *naVC = [[NavigationViewController alloc] initWithRootViewController:childVC];
     naVC.navigationBar.barTintColor = [UIColor redColor];
+//    naVC.childViewControllerForStatusBarStyle = UIStatusBarStyleLightContent;
     [self addChildViewController:naVC];
     
 }
+
+//-(UIStatusBarStyle)preferredStatusBarStyle{
+//    return UIStatusBarStyleLightContent;
+//}
+
 
 /*
 #pragma mark - Navigation

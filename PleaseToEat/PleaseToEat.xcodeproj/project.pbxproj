@@ -19,6 +19,8 @@
 		DA7FD21B1CC73314001C2F40 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD21A1CC73314001C2F40 /* UIView+Extension.m */; };
 		DA7FD21E1CC73370001C2F40 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD21D1CC73370001C2F40 /* TabBar.m */; };
 		DA7FD2261CC75D1A001C2F40 /* PlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2251CC75D1A001C2F40 /* PlusViewController.m */; };
+		DA7FD2291CC78625001C2F40 /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2281CC78625001C2F40 /* ScreenViewController.m */; };
+		DA7FD24F1CC7B68A001C2F40 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD24E1CC7B68A001C2F40 /* NavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,10 @@
 		DA7FD21F1CC7349A001C2F40 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DA7FD2241CC75D1A001C2F40 /* PlusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlusViewController.h; sourceTree = "<group>"; };
 		DA7FD2251CC75D1A001C2F40 /* PlusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlusViewController.m; sourceTree = "<group>"; };
+		DA7FD2271CC78625001C2F40 /* ScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenViewController.h; sourceTree = "<group>"; };
+		DA7FD2281CC78625001C2F40 /* ScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenViewController.m; sourceTree = "<group>"; };
+		DA7FD24D1CC7B68A001C2F40 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		DA7FD24E1CC7B68A001C2F40 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,8 @@
 			children = (
 				DA7FD20D1CC72D4E001C2F40 /* CompViewController.h */,
 				DA7FD20E1CC72D4E001C2F40 /* CompViewController.m */,
+				DA7FD2271CC78625001C2F40 /* ScreenViewController.h */,
+				DA7FD2281CC78625001C2F40 /* ScreenViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,6 +253,8 @@
 			children = (
 				DA7FD20A1CC72C0D001C2F40 /* RootController.h */,
 				DA7FD20B1CC72C0D001C2F40 /* RootController.m */,
+				DA7FD24D1CC7B68A001C2F40 /* NavigationViewController.h */,
+				DA7FD24E1CC7B68A001C2F40 /* NavigationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -386,9 +396,11 @@
 				DA7FD2151CC72D75001C2F40 /* MessageViewController.m in Sources */,
 				DA7FD2181CC72DB7001C2F40 /* MineViewController.m in Sources */,
 				DA7FD2121CC72D5D001C2F40 /* ContactViewController.m in Sources */,
+				DA7FD2291CC78625001C2F40 /* ScreenViewController.m in Sources */,
 				DA7FD2261CC75D1A001C2F40 /* PlusViewController.m in Sources */,
 				DA7FD20C1CC72C0D001C2F40 /* RootController.m in Sources */,
 				DA7FD20F1CC72D4E001C2F40 /* CompViewController.m in Sources */,
+				DA7FD24F1CC7B68A001C2F40 /* NavigationViewController.m in Sources */,
 				DA7FD1E31CC70FC4001C2F40 /* AppDelegate.m in Sources */,
 				DA7FD21B1CC73314001C2F40 /* UIView+Extension.m in Sources */,
 				DA7FD1E01CC70FC4001C2F40 /* main.m in Sources */,
@@ -535,6 +547,7 @@
 				DA7FD1F41CC70FC4001C2F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
