@@ -18,9 +18,9 @@
 		DA7FD2181CC72DB7001C2F40 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2171CC72DB7001C2F40 /* MineViewController.m */; };
 		DA7FD21B1CC73314001C2F40 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD21A1CC73314001C2F40 /* UIView+Extension.m */; };
 		DA7FD21E1CC73370001C2F40 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD21D1CC73370001C2F40 /* TabBar.m */; };
-		DA7FD2261CC75D1A001C2F40 /* PlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2251CC75D1A001C2F40 /* PlusViewController.m */; };
 		DA7FD2291CC78625001C2F40 /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2281CC78625001C2F40 /* ScreenViewController.m */; };
 		DA7FD24F1CC7B68A001C2F40 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD24E1CC7B68A001C2F40 /* NavigationViewController.m */; };
+		DA7FD2521CC7C6DE001C2F40 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2511CC7C6DE001C2F40 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,12 +46,12 @@
 		DA7FD21C1CC73370001C2F40 /* TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBar.h; sourceTree = "<group>"; };
 		DA7FD21D1CC73370001C2F40 /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
 		DA7FD21F1CC7349A001C2F40 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		DA7FD2241CC75D1A001C2F40 /* PlusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlusViewController.h; sourceTree = "<group>"; };
-		DA7FD2251CC75D1A001C2F40 /* PlusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlusViewController.m; sourceTree = "<group>"; };
 		DA7FD2271CC78625001C2F40 /* ScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenViewController.h; sourceTree = "<group>"; };
 		DA7FD2281CC78625001C2F40 /* ScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenViewController.m; sourceTree = "<group>"; };
 		DA7FD24D1CC7B68A001C2F40 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		DA7FD24E1CC7B68A001C2F40 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		DA7FD2501CC7C6DE001C2F40 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		DA7FD2511CC7C6DE001C2F40 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +106,9 @@
 		DA7FD1F51CC718B0001C2F40 /* Compositor(排行) */ = {
 			isa = PBXGroup;
 			children = (
+				DA7FD2F01CC7CAD8001C2F40 /* Model */,
+				DA7FD2F11CC7CAD8001C2F40 /* View */,
 				DA7FD1F61CC718B0001C2F40 /* Controller */,
-				DA7FD1F71CC718B0001C2F40 /* Model */,
-				DA7FD1F81CC718B0001C2F40 /* View */,
 			);
 			path = "Compositor(排行)";
 			sourceTree = "<group>";
@@ -120,30 +120,18 @@
 				DA7FD20E1CC72D4E001C2F40 /* CompViewController.m */,
 				DA7FD2271CC78625001C2F40 /* ScreenViewController.h */,
 				DA7FD2281CC78625001C2F40 /* ScreenViewController.m */,
+				DA7FD2501CC7C6DE001C2F40 /* MapViewController.h */,
+				DA7FD2511CC7C6DE001C2F40 /* MapViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		DA7FD1F71CC718B0001C2F40 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DA7FD1F81CC718B0001C2F40 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		DA7FD1F91CC718B0001C2F40 /* Contact(联系人) */ = {
 			isa = PBXGroup;
 			children = (
+				DA7FD2F21CC7CAED001C2F40 /* Model */,
+				DA7FD2F31CC7CAED001C2F40 /* View */,
 				DA7FD1FA1CC718B0001C2F40 /* Controller */,
-				DA7FD1FB1CC718B0001C2F40 /* Model */,
-				DA7FD1FC1CC718B0001C2F40 /* View */,
 			);
 			path = "Contact(联系人)";
 			sourceTree = "<group>";
@@ -157,26 +145,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		DA7FD1FB1CC718B0001C2F40 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DA7FD1FC1CC718B0001C2F40 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		DA7FD1FD1CC718B0001C2F40 /* Message(消息) */ = {
 			isa = PBXGroup;
 			children = (
+				DA7FD2F41CC7CB10001C2F40 /* Model */,
+				DA7FD2F51CC7CB10001C2F40 /* View */,
 				DA7FD1FE1CC718B0001C2F40 /* Controller */,
-				DA7FD1FF1CC718B0001C2F40 /* Model */,
-				DA7FD2001CC718B0001C2F40 /* View */,
 			);
 			path = "Message(消息)";
 			sourceTree = "<group>";
@@ -190,26 +164,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		DA7FD1FF1CC718B0001C2F40 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DA7FD2001CC718B0001C2F40 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		DA7FD2011CC718B0001C2F40 /* Mine(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				DA7FD2F61CC7CB1A001C2F40 /* Model */,
+				DA7FD2F71CC7CB1A001C2F40 /* View */,
 				DA7FD2021CC718B0001C2F40 /* Controller */,
-				DA7FD2031CC718B0001C2F40 /* Model */,
-				DA7FD2041CC718B0001C2F40 /* View */,
 			);
 			path = "Mine(我的)";
 			sourceTree = "<group>";
@@ -221,20 +181,6 @@
 				DA7FD2171CC72DB7001C2F40 /* MineViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		DA7FD2031CC718B0001C2F40 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DA7FD2041CC718B0001C2F40 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		DA7FD2051CC718DC001C2F40 /* Other */ = {
@@ -317,10 +263,64 @@
 		DA7FD2231CC75CFD001C2F40 /* V */ = {
 			isa = PBXGroup;
 			children = (
-				DA7FD2241CC75D1A001C2F40 /* PlusViewController.h */,
-				DA7FD2251CC75D1A001C2F40 /* PlusViewController.m */,
 			);
 			path = V;
+			sourceTree = "<group>";
+		};
+		DA7FD2F01CC7CAD8001C2F40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA7FD2F11CC7CAD8001C2F40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA7FD2F21CC7CAED001C2F40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA7FD2F31CC7CAED001C2F40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA7FD2F41CC7CB10001C2F40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA7FD2F51CC7CB10001C2F40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA7FD2F61CC7CB1A001C2F40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA7FD2F71CC7CB1A001C2F40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,8 +397,8 @@
 				DA7FD2181CC72DB7001C2F40 /* MineViewController.m in Sources */,
 				DA7FD2121CC72D5D001C2F40 /* ContactViewController.m in Sources */,
 				DA7FD2291CC78625001C2F40 /* ScreenViewController.m in Sources */,
-				DA7FD2261CC75D1A001C2F40 /* PlusViewController.m in Sources */,
 				DA7FD20C1CC72C0D001C2F40 /* RootController.m in Sources */,
+				DA7FD2521CC7C6DE001C2F40 /* MapViewController.m in Sources */,
 				DA7FD20F1CC72D4E001C2F40 /* CompViewController.m in Sources */,
 				DA7FD24F1CC7B68A001C2F40 /* NavigationViewController.m in Sources */,
 				DA7FD1E31CC70FC4001C2F40 /* AppDelegate.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  PlusViewController.h
+//  MapViewController.h
 //  PleaseToEat
 //
 //  Created by 姜鸥人 on 16/4/20.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlusViewController : UIViewController
+@interface MapViewController : UITableViewController
 
 @end

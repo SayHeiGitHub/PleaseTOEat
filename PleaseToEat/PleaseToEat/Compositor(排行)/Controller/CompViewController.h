@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CompViewController : UITableViewController
-
+@property(nonatomic,strong)NSString *location; //地区
 @end

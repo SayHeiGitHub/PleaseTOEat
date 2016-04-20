@@ -1,65 +1,23 @@
 //
-//  CompViewController.m
+//  MapViewController.m
 //  PleaseToEat
 //
 //  Created by 姜鸥人 on 16/4/20.
 //  Copyright © 2016年 HeiCoder_OR. All rights reserved.
 //
 
-#import "CompViewController.h"
-#import "ScreenViewController.h"
 #import "MapViewController.h"
-@interface CompViewController ()
+
+@interface MapViewController ()
 
 @end
 
-@implementation CompViewController
+@implementation MapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor yellowColor];
-   self.navigationItem.title = @"返回";
-    UISegmentedControl *seg = [[UISegmentedControl alloc]initWithItems:@[@"热门",@"附近" ]];
-    seg.tintColor = [UIColor whiteColor];
-    seg.frame = CGRectMake(0, 0, 150, seg.frame.size.height);
-    seg.selectedSegmentIndex = 0;
-    seg.layer.cornerRadius = seg.frame.size.height/2;
-    seg.layer.borderWidth = 1.0;
-    seg.layer.masksToBounds = YES;
-    self.navigationItem.titleView= seg;
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"NaviUnFiltered"] style:UIBarButtonItemStylePlain target:self action:@selector(rightBtnAction:)];
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    [self.navigationItem setRightBarButtonItem:rightButton];
-    
-    self.location = @"北京";
-    UIButton *rightBut = [UIButton buttonWithType:UIButtonTypeSystem];
-    rightBut.frame = CGRectMake(0, 0, 60, 30);
-    [rightBut setImage:[UIImage imageNamed:@"NaviList"] forState:UIControlStateNormal];
-    [rightBut setImage:[UIImage imageNamed:@"NaviList_"] forState:UIControlStateHighlighted];
-    [rightBut setTitle:self.location forState:UIControlStateNormal];
-    rightBut.titleLabel.textAlignment = NSTextAlignmentLeft;
-    rightBut.titleEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 5);
-    rightBut.imageEdgeInsets = UIEdgeInsetsMake(5, 2, 5, 10);
-    [rightBut addTarget:self action:@selector(leftBtnAction:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *rightButtonFirst =[[UIBarButtonItem alloc]initWithCustomView:rightBut];
-    self.navigationItem.leftBarButtonItem = rightButtonFirst;
-    
-    
-    
-}
-
--(void)leftBtnAction:(UIBarButtonItem *)sender{
-    MapViewController *map = [[MapViewController alloc]init];
-    [self.navigationController pushViewController:map animated:YES];
-}
-
--(void)rightBtnAction:(UIBarButtonItem *)sender{
-    ScreenViewController *screen = [[ScreenViewController alloc]init];
-    [self.navigationController pushViewController:screen animated:YES];
-    
-    
-}
-
+    self.navigationItem.title = @"选择城市";
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -69,21 +27,14 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
+#warning Incomplete implementation, return the number of sections
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
+#warning Incomplete implementation, return the number of rows
     return 0;
 }
-
-
-- (UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
-}
-
-
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
