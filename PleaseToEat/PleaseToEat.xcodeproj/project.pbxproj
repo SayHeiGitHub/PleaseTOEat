@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C284E9051CC86CE000E40D0C /* ScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = C284E9041CC86CE000E40D0C /* ScreenView.m */; };
+		CBE31C5ABA29CA7E242654AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1532A6B3EFD1A79AB4A2E972 /* libPods.a */; };
 		DA7FD1E01CC70FC4001C2F40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD1DF1CC70FC4001C2F40 /* main.m */; };
 		DA7FD1E31CC70FC4001C2F40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD1E21CC70FC4001C2F40 /* AppDelegate.m */; };
 		DA7FD1EB1CC70FC4001C2F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7FD1EA1CC70FC4001C2F40 /* Assets.xcassets */; };
@@ -23,20 +25,15 @@
 		DA7FD2521CC7C6DE001C2F40 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2511CC7C6DE001C2F40 /* MapViewController.m */; };
 		DA7FD2FA1CC7CDF4001C2F40 /* ChangeContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2F91CC7CDF4001C2F40 /* ChangeContactController.m */; };
 		DA7FD2FD1CC7D069001C2F40 /* SetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2FC1CC7D069001C2F40 /* SetingViewController.m */; };
-		DA9A254F1CC869F000EC4180 /* ceshi.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A254E1CC869F000EC4180 /* ceshi.m */; };
-		DA9A25521CC869FA00EC4180 /* ceshi.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25511CC869FA00EC4180 /* ceshi.m */; };
-		DA9A25551CC86A0300EC4180 /* ceshi.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25541CC86A0300EC4180 /* ceshi.m */; };
-		DA9A25581CC86A0D00EC4180 /* ceshi.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25571CC86A0D00EC4180 /* ceshi.m */; };
-		DA9A255B1CC86A1700EC4180 /* ceshi.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A255A1CC86A1700EC4180 /* ceshi.m */; };
-		DA9A255E1CC86A2000EC4180 /* ceshi.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A255D1CC86A2000EC4180 /* ceshi.m */; };
-		DA9A25611CC86A2700EC4180 /* ceshi.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25601CC86A2700EC4180 /* ceshi.m */; };
-		DA9A25641CC86A2D00EC4180 /* ceshi.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25631CC86A2D00EC4180 /* ceshi.m */; };
-		DA9A25671CC86A4100EC4180 /* ceshi.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25661CC86A4100EC4180 /* ceshi.m */; };
-		DA9A256A1CC86A4A00EC4180 /* ceshi.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25691CC86A4A00EC4180 /* ceshi.m */; };
 		DA9A256D1CC86A5000EC4180 /* ceshi.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A256C1CC86A5000EC4180 /* ceshi.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1532A6B3EFD1A79AB4A2E972 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5021E6CFF1048309012B6815 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		73268BDD95B6176E622D6BE8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C284E9031CC86CE000E40D0C /* ScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenView.h; sourceTree = "<group>"; };
+		C284E9041CC86CE000E40D0C /* ScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenView.m; sourceTree = "<group>"; };
 		DA7FD1DB1CC70FC4001C2F40 /* PleaseToEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PleaseToEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7FD1DF1CC70FC4001C2F40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA7FD1E11CC70FC4001C2F40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -69,26 +66,6 @@
 		DA7FD2F91CC7CDF4001C2F40 /* ChangeContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeContactController.m; sourceTree = "<group>"; };
 		DA7FD2FB1CC7D069001C2F40 /* SetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetingViewController.h; sourceTree = "<group>"; };
 		DA7FD2FC1CC7D069001C2F40 /* SetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetingViewController.m; sourceTree = "<group>"; };
-		DA9A254D1CC869F000EC4180 /* ceshi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshi.h; sourceTree = "<group>"; };
-		DA9A254E1CC869F000EC4180 /* ceshi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshi.m; sourceTree = "<group>"; };
-		DA9A25501CC869FA00EC4180 /* ceshi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshi.h; sourceTree = "<group>"; };
-		DA9A25511CC869FA00EC4180 /* ceshi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshi.m; sourceTree = "<group>"; };
-		DA9A25531CC86A0300EC4180 /* ceshi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshi.h; sourceTree = "<group>"; };
-		DA9A25541CC86A0300EC4180 /* ceshi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshi.m; sourceTree = "<group>"; };
-		DA9A25561CC86A0D00EC4180 /* ceshi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshi.h; sourceTree = "<group>"; };
-		DA9A25571CC86A0D00EC4180 /* ceshi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshi.m; sourceTree = "<group>"; };
-		DA9A25591CC86A1700EC4180 /* ceshi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshi.h; sourceTree = "<group>"; };
-		DA9A255A1CC86A1700EC4180 /* ceshi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshi.m; sourceTree = "<group>"; };
-		DA9A255C1CC86A2000EC4180 /* ceshi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshi.h; sourceTree = "<group>"; };
-		DA9A255D1CC86A2000EC4180 /* ceshi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshi.m; sourceTree = "<group>"; };
-		DA9A255F1CC86A2700EC4180 /* ceshi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshi.h; sourceTree = "<group>"; };
-		DA9A25601CC86A2700EC4180 /* ceshi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshi.m; sourceTree = "<group>"; };
-		DA9A25621CC86A2D00EC4180 /* ceshi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshi.h; sourceTree = "<group>"; };
-		DA9A25631CC86A2D00EC4180 /* ceshi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshi.m; sourceTree = "<group>"; };
-		DA9A25651CC86A4100EC4180 /* ceshi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshi.h; sourceTree = "<group>"; };
-		DA9A25661CC86A4100EC4180 /* ceshi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshi.m; sourceTree = "<group>"; };
-		DA9A25681CC86A4A00EC4180 /* ceshi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshi.h; sourceTree = "<group>"; };
-		DA9A25691CC86A4A00EC4180 /* ceshi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshi.m; sourceTree = "<group>"; };
 		DA9A256B1CC86A5000EC4180 /* ceshi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceshi.h; sourceTree = "<group>"; };
 		DA9A256C1CC86A5000EC4180 /* ceshi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ceshi.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,17 +75,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE31C5ABA29CA7E242654AF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		326921829ECC1ECEE112CBB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1532A6B3EFD1A79AB4A2E972 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA7FD1D21CC70FC4001C2F40 = {
 			isa = PBXGroup;
 			children = (
 				DA7FD1DD1CC70FC4001C2F40 /* PleaseToEat */,
 				DA7FD1DC1CC70FC4001C2F40 /* Products */,
+				E0C2D293C0E0415587169B75 /* Pods */,
+				326921829ECC1ECEE112CBB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,8 +280,6 @@
 		DA7FD2211CC75CFD001C2F40 /* C */ = {
 			isa = PBXGroup;
 			children = (
-				DA9A25651CC86A4100EC4180 /* ceshi.h */,
-				DA9A25661CC86A4100EC4180 /* ceshi.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -301,8 +287,6 @@
 		DA7FD2221CC75CFD001C2F40 /* M */ = {
 			isa = PBXGroup;
 			children = (
-				DA9A25681CC86A4A00EC4180 /* ceshi.h */,
-				DA9A25691CC86A4A00EC4180 /* ceshi.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -319,8 +303,6 @@
 		DA7FD2F01CC7CAD8001C2F40 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DA9A254D1CC869F000EC4180 /* ceshi.h */,
-				DA9A254E1CC869F000EC4180 /* ceshi.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -328,8 +310,8 @@
 		DA7FD2F11CC7CAD8001C2F40 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA9A25501CC869FA00EC4180 /* ceshi.h */,
-				DA9A25511CC869FA00EC4180 /* ceshi.m */,
+				C284E9031CC86CE000E40D0C /* ScreenView.h */,
+				C284E9041CC86CE000E40D0C /* ScreenView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,8 +319,6 @@
 		DA7FD2F21CC7CAED001C2F40 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DA9A25531CC86A0300EC4180 /* ceshi.h */,
-				DA9A25541CC86A0300EC4180 /* ceshi.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -346,8 +326,6 @@
 		DA7FD2F31CC7CAED001C2F40 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA9A25561CC86A0D00EC4180 /* ceshi.h */,
-				DA9A25571CC86A0D00EC4180 /* ceshi.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -355,8 +333,6 @@
 		DA7FD2F41CC7CB10001C2F40 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DA9A25591CC86A1700EC4180 /* ceshi.h */,
-				DA9A255A1CC86A1700EC4180 /* ceshi.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -364,8 +340,6 @@
 		DA7FD2F51CC7CB10001C2F40 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA9A255C1CC86A2000EC4180 /* ceshi.h */,
-				DA9A255D1CC86A2000EC4180 /* ceshi.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -373,8 +347,6 @@
 		DA7FD2F61CC7CB1A001C2F40 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DA9A255F1CC86A2700EC4180 /* ceshi.h */,
-				DA9A25601CC86A2700EC4180 /* ceshi.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -382,10 +354,17 @@
 		DA7FD2F71CC7CB1A001C2F40 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA9A25621CC86A2D00EC4180 /* ceshi.h */,
-				DA9A25631CC86A2D00EC4180 /* ceshi.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E0C2D293C0E0415587169B75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73268BDD95B6176E622D6BE8 /* Pods.debug.xcconfig */,
+				5021E6CFF1048309012B6815 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,9 +374,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA7FD1F21CC70FC4001C2F40 /* Build configuration list for PBXNativeTarget "PleaseToEat" */;
 			buildPhases = (
+				9D9F5C4522EEC70578C04EEA /* Check Pods Manifest.lock */,
 				DA7FD1D71CC70FC4001C2F40 /* Sources */,
 				DA7FD1D81CC70FC4001C2F40 /* Frameworks */,
 				DA7FD1D91CC70FC4001C2F40 /* Resources */,
+				F150BF26084AC38909423FE1 /* Embed Pods Frameworks */,
+				F6006EC4BE4A992BE53FBE8C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -452,35 +434,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9D9F5C4522EEC70578C04EEA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F150BF26084AC38909423FE1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6006EC4BE4A992BE53FBE8C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA7FD1D71CC70FC4001C2F40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA9A25581CC86A0D00EC4180 /* ceshi.m in Sources */,
 				DA7FD21E1CC73370001C2F40 /* TabBar.m in Sources */,
-				DA9A25641CC86A2D00EC4180 /* ceshi.m in Sources */,
 				DA7FD2151CC72D75001C2F40 /* MessageViewController.m in Sources */,
+				C284E9051CC86CE000E40D0C /* ScreenView.m in Sources */,
 				DA9A256D1CC86A5000EC4180 /* ceshi.m in Sources */,
 				DA7FD2181CC72DB7001C2F40 /* MineViewController.m in Sources */,
 				DA7FD2FA1CC7CDF4001C2F40 /* ChangeContactController.m in Sources */,
-				DA9A256A1CC86A4A00EC4180 /* ceshi.m in Sources */,
 				DA7FD2FD1CC7D069001C2F40 /* SetingViewController.m in Sources */,
 				DA7FD2121CC72D5D001C2F40 /* ContactViewController.m in Sources */,
 				DA7FD2291CC78625001C2F40 /* ScreenViewController.m in Sources */,
-				DA9A25551CC86A0300EC4180 /* ceshi.m in Sources */,
-				DA9A25671CC86A4100EC4180 /* ceshi.m in Sources */,
 				DA7FD20C1CC72C0D001C2F40 /* RootController.m in Sources */,
 				DA7FD2521CC7C6DE001C2F40 /* MapViewController.m in Sources */,
-				DA9A254F1CC869F000EC4180 /* ceshi.m in Sources */,
-				DA9A255B1CC86A1700EC4180 /* ceshi.m in Sources */,
 				DA7FD20F1CC72D4E001C2F40 /* CompViewController.m in Sources */,
-				DA9A255E1CC86A2000EC4180 /* ceshi.m in Sources */,
 				DA7FD24F1CC7B68A001C2F40 /* NavigationViewController.m in Sources */,
 				DA7FD1E31CC70FC4001C2F40 /* AppDelegate.m in Sources */,
 				DA7FD21B1CC73314001C2F40 /* UIView+Extension.m in Sources */,
-				DA9A25611CC86A2700EC4180 /* ceshi.m in Sources */,
-				DA9A25521CC869FA00EC4180 /* ceshi.m in Sources */,
 				DA7FD1E01CC70FC4001C2F40 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +605,7 @@
 		};
 		DA7FD1F31CC70FC4001C2F40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73268BDD95B6176E622D6BE8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PleaseToEat/Other/Main/PrefixHeader.pch";
@@ -596,6 +618,7 @@
 		};
 		DA7FD1F41CC70FC4001C2F40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5021E6CFF1048309012B6815 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PleaseToEat/Other/Main/PrefixHeader.pch";
