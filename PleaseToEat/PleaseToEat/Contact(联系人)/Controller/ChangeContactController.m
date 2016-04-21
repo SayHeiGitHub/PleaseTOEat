@@ -1,38 +1,34 @@
 //
-//  MessageViewController.m
+//  ChangeContactController.m
 //  PleaseToEat
 //
 //  Created by 姜鸥人 on 16/4/20.
 //  Copyright © 2016年 HeiCoder_OR. All rights reserved.
 //
 
-#import "MessageViewController.h"
+#import "ChangeContactController.h"
 
-@interface MessageViewController ()
+@interface ChangeContactController ()
 
 @end
 
-@implementation MessageViewController
+@implementation ChangeContactController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor cyanColor];
+self.navigationItem.title = @"选择联系人";
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-     self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"忽略未读" style:UIBarButtonItemStylePlain target:self action:@selector(rightAction:)];
-    [self.navigationItem setRightBarButtonItem:rightButton];
-    
-    
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(leftAction:)];
+    [self.navigationItem setLeftBarButtonItem:leftButton];
+
 }
--(void)rightAction:(UIBarButtonItem *)sender{
+-(void)leftAction:(UIBarButtonItem *)sender{
     
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

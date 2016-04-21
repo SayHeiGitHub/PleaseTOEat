@@ -1,38 +1,41 @@
 //
-//  MessageViewController.m
+//  SetingViewController.m
 //  PleaseToEat
 //
 //  Created by 姜鸥人 on 16/4/20.
 //  Copyright © 2016年 HeiCoder_OR. All rights reserved.
 //
 
-#import "MessageViewController.h"
+#import "SetingViewController.h"
 
-@interface MessageViewController ()
+@interface SetingViewController ()
 
 @end
 
-@implementation MessageViewController
+@implementation SetingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor cyanColor];
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-     self.navigationController.navigationBar.barTintColor = [UIColor redColor];
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"忽略未读" style:UIBarButtonItemStylePlain target:self action:@selector(rightAction:)];
-    [self.navigationItem setRightBarButtonItem:rightButton];
-    
-    
-}
--(void)rightAction:(UIBarButtonItem *)sender{
-    
-    
+    self.navigationItem.title = @"设置";
+    UIButton *rightBut = [UIButton buttonWithType:UIButtonTypeSystem];
+    rightBut.frame = CGRectMake(0, 0, 80, 40);
+    [rightBut setImage:[UIImage imageNamed:@"NaviBack_"] forState:UIControlStateNormal];
+    [rightBut setImage:[UIImage imageNamed:@"NaviBack_"] forState:UIControlStateHighlighted];
+    [rightBut setTitle:@"返回" forState:UIControlStateNormal];
+    rightBut.titleLabel.textAlignment = NSTextAlignmentLeft;
+    rightBut.titleEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 6);
+    rightBut.imageEdgeInsets = UIEdgeInsetsMake(5, 4, 5, 10);
+    rightBut.titleLabel.font = [UIFont systemFontOfSize:17];
+    rightBut.contentHorizontalAlignment =UIControlContentHorizontalAlignmentLeft;
+    [rightBut addTarget:self action:@selector(leftBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightButtonFirst =[[UIBarButtonItem alloc]initWithCustomView:rightBut];
+    self.navigationItem.leftBarButtonItem = rightButtonFirst;
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
+-(void)leftBtnAction:(UIBarButtonItem *)sender{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

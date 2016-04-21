@@ -33,13 +33,15 @@
     
     self.location = @"北京";
     UIButton *rightBut = [UIButton buttonWithType:UIButtonTypeSystem];
-    rightBut.frame = CGRectMake(0, 0, 60, 30);
+    rightBut.frame = CGRectMake(0, 0, 80, 40);
     [rightBut setImage:[UIImage imageNamed:@"NaviList"] forState:UIControlStateNormal];
     [rightBut setImage:[UIImage imageNamed:@"NaviList_"] forState:UIControlStateHighlighted];
     [rightBut setTitle:self.location forState:UIControlStateNormal];
+    rightBut.titleLabel.font = [UIFont systemFontOfSize:17];
     rightBut.titleLabel.textAlignment = NSTextAlignmentLeft;
     rightBut.titleEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 5);
     rightBut.imageEdgeInsets = UIEdgeInsetsMake(5, 2, 5, 10);
+    rightBut.contentHorizontalAlignment =UIControlContentHorizontalAlignmentLeft; 
     [rightBut addTarget:self action:@selector(leftBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightButtonFirst =[[UIBarButtonItem alloc]initWithCustomView:rightBut];
     self.navigationItem.leftBarButtonItem = rightButtonFirst;

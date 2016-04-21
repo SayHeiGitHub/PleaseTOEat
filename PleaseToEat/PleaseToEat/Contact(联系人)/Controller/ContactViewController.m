@@ -7,7 +7,7 @@
 //
 
 #import "ContactViewController.h"
-
+#import "ChangeContactController.h"
 @interface ContactViewController ()
 
 @end
@@ -17,13 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"发起群聊" style:UIBarButtonItemStylePlain target:self action:@selector(rightAction:)];
+    [self.navigationItem setRightBarButtonItem:rightButton];
 }
+
+-(void)rightAction:(UIBarButtonItem *)sender{
+    ChangeContactController *changCon = [[ChangeContactController alloc]init];
+    UINavigationController *CCNV = [[UINavigationController alloc]initWithRootViewController:changCon];
+    [self presentViewController:CCNV animated:YES completion:nil];
+    
+}
+
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }

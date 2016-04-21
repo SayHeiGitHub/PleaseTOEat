@@ -7,7 +7,7 @@
 //
 
 #import "MineViewController.h"
-
+#import "SetingViewController.h"
 @interface MineViewController ()
 
 @end
@@ -17,12 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor orangeColor];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"NaviSetting"] style:UIBarButtonItemStylePlain target:self action:@selector(rightAction:)];
+    [self.navigationItem setRightBarButtonItem:leftButton];
+    
+    
+    
+}
+
+-(void)rightAction:(UIBarButtonItem *)sender{
+    SetingViewController *seting = [[SetingViewController alloc]init];
+    [self.navigationController pushViewController:seting animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

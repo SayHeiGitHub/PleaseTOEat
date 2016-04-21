@@ -21,6 +21,8 @@
 		DA7FD2291CC78625001C2F40 /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2281CC78625001C2F40 /* ScreenViewController.m */; };
 		DA7FD24F1CC7B68A001C2F40 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD24E1CC7B68A001C2F40 /* NavigationViewController.m */; };
 		DA7FD2521CC7C6DE001C2F40 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2511CC7C6DE001C2F40 /* MapViewController.m */; };
+		DA7FD2FA1CC7CDF4001C2F40 /* ChangeContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2F91CC7CDF4001C2F40 /* ChangeContactController.m */; };
+		DA7FD2FD1CC7D069001C2F40 /* SetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FD2FC1CC7D069001C2F40 /* SetingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,10 @@
 		DA7FD24E1CC7B68A001C2F40 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		DA7FD2501CC7C6DE001C2F40 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		DA7FD2511CC7C6DE001C2F40 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		DA7FD2F81CC7CDF4001C2F40 /* ChangeContactController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeContactController.h; sourceTree = "<group>"; };
+		DA7FD2F91CC7CDF4001C2F40 /* ChangeContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeContactController.m; sourceTree = "<group>"; };
+		DA7FD2FB1CC7D069001C2F40 /* SetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetingViewController.h; sourceTree = "<group>"; };
+		DA7FD2FC1CC7D069001C2F40 /* SetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,8 @@
 			children = (
 				DA7FD2101CC72D5D001C2F40 /* ContactViewController.h */,
 				DA7FD2111CC72D5D001C2F40 /* ContactViewController.m */,
+				DA7FD2F81CC7CDF4001C2F40 /* ChangeContactController.h */,
+				DA7FD2F91CC7CDF4001C2F40 /* ChangeContactController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,6 +187,8 @@
 			children = (
 				DA7FD2161CC72DB7001C2F40 /* MineViewController.h */,
 				DA7FD2171CC72DB7001C2F40 /* MineViewController.m */,
+				DA7FD2FB1CC7D069001C2F40 /* SetingViewController.h */,
+				DA7FD2FC1CC7D069001C2F40 /* SetingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -395,6 +405,8 @@
 				DA7FD21E1CC73370001C2F40 /* TabBar.m in Sources */,
 				DA7FD2151CC72D75001C2F40 /* MessageViewController.m in Sources */,
 				DA7FD2181CC72DB7001C2F40 /* MineViewController.m in Sources */,
+				DA7FD2FA1CC7CDF4001C2F40 /* ChangeContactController.m in Sources */,
+				DA7FD2FD1CC7D069001C2F40 /* SetingViewController.m in Sources */,
 				DA7FD2121CC72D5D001C2F40 /* ContactViewController.m in Sources */,
 				DA7FD2291CC78625001C2F40 /* ScreenViewController.m in Sources */,
 				DA7FD20C1CC72C0D001C2F40 /* RootController.m in Sources */,

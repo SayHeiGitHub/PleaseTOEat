@@ -24,10 +24,10 @@
 
     CompViewController *comp = [[CompViewController alloc]init];
     [self addOneChildVC:comp title:@"排行" imageName:@"TabIconRank" selectedImageName:@"TabIconRank_"];
-    ContactViewController *contact = [[ContactViewController alloc ]init];
-    [self addOneChildVC:contact title:@"联系人" imageName:@"TabIconContact" selectedImageName:@"TabIconContact_"];
     MessageViewController *message = [[MessageViewController alloc]init];
     [self addOneChildVC:message title:@"消息" imageName:@"TabIconMessage" selectedImageName:@"TabIconMessage_"];
+    ContactViewController *contact = [[ContactViewController alloc ]init];
+    [self addOneChildVC:contact title:@"联系人" imageName:@"TabIconContact" selectedImageName:@"TabIconContact_"];
     MineViewController *mine = [[MineViewController alloc]init];
     [self addOneChildVC:mine title:@"我的" imageName:@"TabIconMine" selectedImageName:@"TabIconMine_"];
 
